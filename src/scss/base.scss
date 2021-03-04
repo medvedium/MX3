@@ -1,0 +1,27 @@
+body {
+  font-family: Roboto;
+}
+
+p, h2 {
+  margin: 0;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+}
+
+.text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  &-center {
+    padding-right: 33px;
+    padding-left: 34px;
+  }
+}

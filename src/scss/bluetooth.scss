@@ -1,0 +1,18 @@
+.bluetooth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 42px;
+  padding-bottom: 236px;
+
+  background-color: #ededed;
+  background-image: url(../img/bluetooth-bg.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  &__icon {
+    margin-bottom: 27px;
+  }
+}

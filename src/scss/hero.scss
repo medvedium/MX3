@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.hero {
+  background-color: #e0e1e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 25px;
+  padding-bottom: 48px;
+  &__img {
+    height: 256px;
+    margin-bottom: 67px;
+    background-image: url(../img/hero.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: contain;
+  }
+  &__arrow {
+    margin-top: 40px;
+  }
+}
+
