@@ -18,3 +18,15 @@
     background-image: url(../img/mouse-img-2.jpg);
   }
 }
+
+@media (min-width: 768px) {
+  .mouse {
+    &__img {
+      height: 549px;
+    }
+    
+    &__text {
+      padding-bottom: 50px;
+    }
+  }
+}
