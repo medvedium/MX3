@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Logitech MX Master 3</title>
 </head>
@@ -27,12 +29,16 @@
     <p class="text">
       Создана для эффективной работы, программирования и творчества
     </p>
-    <svg width="42" height="22" viewBox="0 0 42 22" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero__arrow">
-      <path d="M1 1L20.6552 21L40.3103 1" stroke="#FF2947" stroke-width="2" stroke-linejoin="round" />
-    </svg>
+    <a href="#bluetooth">
+      <svg class="hero__arrow" width="61" height="33" viewBox="0 0 61 33" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path d="M2 2L30.5 31L59 2" stroke="#FF2947" stroke-width="3" stroke-linejoin="round" />
+      </svg>
+
+    </a>
   </section>
 
-  <section class="bluetooth">
+  <section class="bluetooth" id="bluetooth">
     <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg"
       class="bluetooth__icon">
       <path
@@ -43,21 +49,23 @@
     <h2 class="title">БЕЗ ПРОВОДОВ</h2>
     <p class="text text-center">Беспроводная мышь MX Master 3 работает без проводов до нескольких месяцев. Вы закроете
       приоритетные задачи прежде, чем понадобится подзарядка.</p>
-    <h3 class="subtitle">70 дней</h3>
+    <div class="bluetooth__img">
+      <h3 class="subtitle">70 дней</h3>
+    </div>
   </section>
 
   <section class="surface">
     <h2 class="title">ЗА ЛЮБЫМ СТОЛОМ</h2>
-    <p class="text">Исследуйте ландшафты своего дома, не отвлекаясь от работы.
+    <p class="text text-center">Исследуйте ландшафты своего дома, не отвлекаясь от работы.
       MX Master 3 достаточно компактная, чтобы сменить рабочее место и перенестись с ноутбуком на кухню.</p>
     <div class="surface__content">
       <div class="surface__item">
-        <h3 class="title">В 5 раз</h3>
+        <h3 class="title surface__title">В 5 раз</h3>
         <p class="text">точнее
           предшественников</p>
       </div>
       <div class="surface__item">
-        <h3 class="title">4 000</h3>
+        <h3 class="title surface__title">4 000</h3>
         <p class="text">точек на дюйм
           чувствительность датчика</p>
       </div>
@@ -70,62 +78,65 @@
         <button type="button" data-bs-target="#surface__slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
         <button type="button" data-bs-target="#surface__slider" data-bs-slide-to="3" aria-label="Slide 4"></button>
         <button type="button" data-bs-target="#surface__slider" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <div class="control__buttons">
+          <button class="carousel-control-prev" type="button" data-bs-target="#surface__slider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#surface__slider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/wood.jpg" class="d-block w-100" alt="wood">
+          <img src="img/slider_1/wood.jpg" class="d-block w-100" alt="wood">
         </div>
         <div class="carousel-item">
-          <img src="img/glass.jpg" class="d-block w-100" alt="glass">
+          <img src="img/slider_1/glass.jpg" class="d-block w-100" alt="glass">
         </div>
         <div class="carousel-item">
-          <img src="img/linoleum.jpg" class="d-block w-100" alt="linoleum">
+          <img src="img/slider_1/linoleum.jpg" class="d-block w-100" alt="linoleum">
         </div>
         <div class="carousel-item">
-          <img src="img/cloth.jpg" class="d-block w-100" alt="cloth">
+          <img src="img/slider_1/cloth.jpg" class="d-block w-100" alt="cloth">
         </div>
         <div class="carousel-item">
-          <img src="img/marble.jpg" class="d-block w-100" alt="marble">
+          <img src="img/slider_1/marble.jpg" class="d-block w-100" alt="marble">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#surface__slider" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#surface__slider" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
+
     <h3 class="surface__switch">Переключите поверхность</h3>
-    <p class="text">Благодаря технологии Logitecch Darkfierd,
+    <p class="text text-center">Благодаря технологии Logitecch Darkfierd,
       MX Master 3 работает на любой поверхности, даже на стекле.</p>
   </section>
 
-  <section class="devices">
+  <section class="flow">
     <h2 class="title">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</h2>
-    <p class="text">С технологией Flow вы сможете работать одновременно на нескольких компьютерах, мгновенно
+    <p class="text text-center">С технологией Flow вы сможете работать одновременно на нескольких компьютерах, мгновенно
       переключаясь между разными операционными системами — даже между Windows® и macOS.
       Например, достаточно скопировать текст, изображение или файл на MacBook и переместить его
       на Windows PC без задержек.
     </p>
-    <p class="text">Клавиатура MX Keys отслеживает перемещение курсора мыши MX Master 3, благодаря чему ваш
+    <p class="text text-center">Клавиатура MX Keys отслеживает перемещение курсора мыши MX Master 3, благодаря чему ваш
       текст появится там, где вы работаете в текущий момент.</p>
-    <ol class="devices__list">
-      <li class="text">Нажмите и удерживайте
+    <ol class="flow__list">
+      <li class="flow__list--item">Нажмите и удерживайте
         папку, чтобы переместить её</li>
-      <li class="text">Перенесите папку на любой
+      <li class="flow__list--item">Перенесите папку на любой
         из соседних экранов</li>
-      <li class="text">Да, всё так просто!</li>
+      <li class="flow__list--item">Да, всё так просто!</li>
     </ol>
   </section>
 
   <section class="settings">
     <h2 class="title">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</h2>
-    <p class="text">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
+    <p class="text text-center">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
       индивидуальным настройкам, вы сможете настроить кнопки и жесты практически
       под любое используемое приложение.</p>
-    <div id="settings__slider" class="carousel slide" data-bs-ride="carousel">
+    <div id="settings__slider" class="carousel slide settings__slider" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#settings__slider" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
@@ -137,53 +148,52 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/slider_2/f370c2e.jpg" class="d-block w-100" alt="wood">
+          <img src="img/slider_2/slide-1.png" class="d-block w-100" alt="wood">
         </div>
         <div class="carousel-item">
-          <img src="img/slider_2/fecdd75.jpg" class="d-block w-100" alt="glass">
+          <img src="img/slider_2/slide-2.png" class="d-block w-100" alt="glass">
         </div>
         <div class="carousel-item">
-          <img src="img/slider_2/b74bcf9.jpg" class="d-block w-100" alt="linoleum">
+          <img src="img/slider_2/slide-3.png" class="d-block w-100" alt="linoleum">
         </div>
         <div class="carousel-item">
-          <img src="img/slider_2/c075726.jpg" class="d-block w-100" alt="cloth">
+          <img src="img/slider_2/slide-4.png" class="d-block w-100" alt="cloth">
         </div>
         <div class="carousel-item">
-          <img src="img/slider_2/e987ca8.jpg" class="d-block w-100" alt="marble">
+          <img src="img/slider_2/slide-5.png" class="d-block w-100" alt="marble">
         </div>
         <div class="carousel-item">
-          <img src="img/slider_2/f8bf6eb.jpg" class="d-block w-100" alt="marble">
+          <img src="img/slider_2/slide-6.png" class="d-block w-100" alt="marble">
         </div>
       </div>
     </div>
-  </section>
-
-  <div class="programs">
-    <div class="program__icons">
-      <img src="img/programs/ps.png" alt="" class="program__icon">
-      <img src="img/programs/pr.png" alt="" class="program__icon">
-      <img src="img/programs/browsers.png" alt="" class="program__icon">
-      <img src="img/programs/word.png" alt="" class="program__icon">
-      <img src="img/programs/powerpoint.png" alt="" class="program__icon">
-      <img src="img/programs/excel.png" alt="" class="program__icon">
-      <img src="img/programs/movie.png" alt="" class="program__icon">
+    <div class="programs">
+      <div class="programs__icons">
+        <img src="img/programs/ps.png" alt="" class="programs__icon">
+        <img src="img/programs/pr.png" alt="" class="programs__icon">
+        <img src="img/programs/browsers.png" alt="" class="programs__icon">
+        <img src="img/programs/word.png" alt="" class="programs__icon">
+        <img src="img/programs/powerpoint.png" alt="" class="programs__icon">
+        <img src="img/programs/excel.png" alt="" class="programs__icon">
+        <img src="img/programs/movie.png" alt="" class="programs__icon">
+      </div>
+      <p class="text">Начните работать продуктивнее с момента покупки — устройство
+        предварительно оптимизировано под популярные приложения
+        на Windows и Mac.</p>
     </div>
-    <p class="text">Начните работать продуктивнее с момента покупки — устройство
-      предварительно оптимизировано под популярные приложения
-      на Windows и Mac.</p>
-  </div>
+  </section>
 
   <section class="mouse">
     <div class="mouse__text mouse__text_1">
       <h2 class="title">КОМФОРТНО. ЭРГОНОМИЧНО. ИНТУИТИВНО.</h2>
-      <p class="text text_center">Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей
+      <p class="text text-center">Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей
         ладони. Но не менее важны колесико прокрутки для большого пальца
         и расположение кнопок жестов, с которыми вы будете творить уверенно как никогда.</p>
     </div>
     <div class="mouse__img mouse__img_1"></div>
     <div class="mouse__text mouse__text_2">
       <h2 class="title">БЫСТРЕЕ, ЧЕМ КОГДА-ЛИБО</h2>
-      <p class="text text_center">Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
+      <p class="text text-center">Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
         со скоростью 1000 строк за 1 секунду.
         С точностью до пикселя. Бесшумно.</p>
     </div>

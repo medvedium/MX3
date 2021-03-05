@@ -1,0 +1,42 @@
+.settings {
+  background-color: #ededed;
+  padding-top: 70px;
+  padding-bottom: 1px;
+
+  &__slider {
+    margin: 35px 22px 98px 22px;
+  }
+
+  & .carousel-indicators {
+    bottom: -70px;
+    & [data-bs-target] {
+      background-color: #C4C4C4;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      opacity: 1;
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+    }
+    & .active {
+      background-color: #000;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .settings {
+    &__slider {
+      margin: 54px 198px 150px 150px;
+    }
+
+    & .carousel-indicators {
+      bottom: -90px;
+      & [data-bs-target] {
+        width: 25px;
+        height: 25px; 
+      }
+    }
+  }
+}

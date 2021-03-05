@@ -3,6 +3,9 @@
   justify-content: center;
   margin-bottom: 94px;
 }
+.logo {
+  width: 130px;
+}
 
 .hero {
   background-color: #e0e1e2;
@@ -13,14 +16,47 @@
   padding-bottom: 48px;
   &__img {
     height: 256px;
-    margin-bottom: 67px;
-    background-image: url(../img/hero.png);
-    background-position: bottom;
+    width: 100%;
+    margin-bottom: 41px;
+    background-image: url(../img/hero-tablet.png);
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: contain;
+    background-size: contain;
   }
   &__arrow {
     margin-top: 40px;
+    width: 42px;
+    height: 22px;
+  }
+  & .text {
+    margin-left: 59px;
+    margin-right: 59px;
   }
 }
 
+@media (min-width: 768px) {
+  .header {
+    margin-bottom: 160px;
+  }
+
+  .hero {
+    padding-top: 56px;
+    padding-bottom: 80px;
+    &__img {
+      height: 514px;
+    }
+    & .text {
+      margin-right: 159px;
+      margin-left: 150px;
+    }
+    &__arrow {
+      margin-top: 76px;
+      width: 57px;
+      height: 29px;
+    }
+  }
+
+  .logo {
+    width: 240px;
+  }
+}

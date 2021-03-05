@@ -4,15 +4,46 @@
   align-items: center;
 
   padding-top: 42px;
-  padding-bottom: 236px;
+  padding-bottom: 22px;
 
   background-color: #ededed;
-  background-image: url(../img/bluetooth-bg.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain;
+
 
   &__icon {
     margin-bottom: 27px;
   }
+  &__img {
+    height: 284px;
+    background-image: url(../img/bluetooth-bg.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  & .subtitle {
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .bluetooth {
+    padding-top: 80px;
+    padding-bottom: 3px;
+
+    & .subtitle {
+      font-size: 150px;
+      line-height: 176px;
+    }
+    &__img {
+      height: 597px;
+      margin-right: 19px;
+      margin-left: 39px;
+    }
+
+    &__icon {
+      width: 20px;
+      height: 40px;
+    }
+  }
+
+
 }

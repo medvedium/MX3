@@ -1,0 +1,155 @@
+.surface {
+  padding-top: 70px;
+  padding-bottom: 63px;
+  position: relative;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    padding: 30px 20px;
+  }
+  &__item {
+    flex-basis: 166px;
+    padding: 10px;
+    border: 1px solid #000; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+  }
+  &__switch {
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 70px;
+  }
+  &__slider {
+    margin-bottom: 27px;
+  }
+  & .carousel-indicators {
+    bottom: -95px;
+    justify-content: center;
+    width: 244px;
+    margin: 0 auto;
+    & [data-bs-target] {
+      background-color: #000;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: none;
+      opacity: 1;
+
+    }
+    & [aria-label="Slide 1"] {
+      background-image: url(../img/slider_1/wood-texture.jpg);
+      margin-right: 22px;
+    }
+    & [aria-label="Slide 2"] {
+      background-image: url(../img/slider_1/glass-texture.jpg);
+      margin-right: 22px;
+    }
+    & [aria-label="Slide 3"] {
+      background-image: url(../img/slider_1/linoleum-texture.jpg);
+      margin-right: 22px;
+    }
+    & [aria-label="Slide 4"] {
+      background-image: url(../img/slider_1/cloth-texture.jpg);
+      margin-right: 22px;
+    }
+    & [aria-label="Slide 5"] {
+      background-image: url(../img/slider_1/marble-texture.jpg);
+    }
+  }
+  & .carousel-control-next, .carousel-control-prev {
+    opacity: 1;
+    bottom: -400px;
+    background-color: transparent !important;
+  }
+
+  & .carousel-control-next {
+    right: -35px;
+  }
+
+  & .carousel-control-prev {
+    left: -35px;
+  }
+
+  & .carousel-control-next-icon {
+    background-image: url(../img/arrow-right.svg);
+    width: 9px;
+    height: 18px;
+    opacity: 1;
+    left: 0;
+  }
+
+  & .carousel-control-prev-icon {
+    background-image: url(../img/arrow-left.svg);
+    width: 9px;
+    height: 18px;
+    opacity: 1;
+    right: 0;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .surface {
+    &__title {
+      margin-bottom: 10px;
+    }
+
+    &__content {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      gap: 30px;
+    }
+
+    &__item {
+      flex-basis: 300px;
+    }
+
+    &__switch {
+      font-size: 24px;
+      margin-top: 50px;
+      margin-bottom: 85px;
+    }
+
+    & .carousel-indicators {
+      width: 320px;
+      bottom: -133px;
+      & [data-bs-target] {
+        background-color: #000;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        opacity: 1;
+  
+      }
+    }
+    & .carousel-control-next-icon {
+      width: 12px;
+      height: 24px;
+    }
+
+    & .carousel-control-prev-icon {
+      width: 12px;
+      height: 24px;
+    }
+
+    & .carousel-control-next {
+      right: -45px;
+    }
+
+    & .carousel-control-prev {
+      left: -45px;
+    }
+  }
+
+}

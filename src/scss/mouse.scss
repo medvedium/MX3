@@ -1,0 +1,20 @@
+.mouse {
+  
+  &__text {
+    padding-top: 70px;
+    padding-bottom: 20px;
+  }
+
+  &__img {
+    height: 310px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &__img_1 {
+    background-image: url(../img/mouse-img-1.jpg);
+  }
+  &__img_2 {
+    background-image: url(../img/mouse-img-2.jpg);
+  }
+}

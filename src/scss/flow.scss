@@ -1,0 +1,75 @@
+.flow {
+  background-color: #ededed;
+  padding-top: 70px;
+
+  background-image: url(../img/flow-bg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+
+  &__list {
+    padding-top: 36px;
+    padding-bottom: 220px;
+    padding-left: 67px;
+    margin-bottom: 0;
+
+    &--item {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: left;
+
+      list-style-position: inside;
+
+      width: 222px;
+
+      &:not(:last-child) {
+        margin-bottom: 23px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .flow {
+    & .title {
+      padding-left: 77px;
+      padding-right: 77px;
+    }
+
+    & .text {
+      padding-right: 65px;
+      padding-left: 64px;
+    }
+
+    &__list {
+      display: flex;
+      padding-right: 68px;
+      padding-left: 66px;
+      justify-content: space-between;
+      padding-bottom: 496px;
+
+      &--item {
+        width: auto;
+        font-size: 20px;
+        line-height: 23px;
+
+        padding-right: 21px;
+        padding-left: 28px;
+        margin-bottom: 0;
+
+        border-right: 1px solid #494949;
+        &:last-child {
+          border-right: none;
+          padding-right: 0;
+        }
+        &:first-child {
+          padding-left: 0;
+        }
+        &:not(:last-child) {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
