@@ -153,3 +153,10 @@
   }
 
 }
+
+@media (min-width:768px) {
+  .surface {
+    padding-left: calc(50% - 580px);
+    padding-right: calc(50% - 580px);
+  }
+}

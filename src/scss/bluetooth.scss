@@ -44,6 +44,12 @@
       height: 40px;
     }
   }
+}
 
-
+@media (min-width: 1024px) {
+  .bluetooth {
+    &__img {
+      height: 427px;
+    }
+  }
 }
