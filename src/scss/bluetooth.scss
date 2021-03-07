@@ -50,6 +50,35 @@
   .bluetooth {
     &__img {
       height: 427px;
+      width: 100%;
+      margin-bottom: 69px;
+      margin-left: 0;
+
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      background: url(../img/bluetooth-bg-desk.png) no-repeat bottom right, url(../img/bluetooth-bg-2-desk.png) no-repeat bottom left;
+    }
+
+    & .subtitle {
+      font-size: 96px;
+      line-height: 112px;
+
+      display: flex;
+      align-items: flex-start;
+    }
+    
+    &__giant {
+      font-size: 300px;
+      line-height: 253px;
+      margin-left: 100px;
+    }
+
+    &-center {
+      width: 100%;
+      padding-left: calc(50% - 622px);
+      padding-right: calc(50% - 622px);
     }
   }
 }
