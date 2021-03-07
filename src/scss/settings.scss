@@ -3,6 +3,10 @@
   padding-top: 70px;
   padding-bottom: 1px;
 
+  &__image {
+    display: none;
+  }
+
   &__slider {
     margin: 35px 22px 98px 22px;
   }
@@ -36,6 +40,30 @@
       & [data-bs-target] {
         width: 25px;
         height: 25px; 
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .settings {
+    padding-top: 100px;
+
+    & .title {
+      font-size: 36px;
+      margin-bottom: 38px;
+    }
+
+    &__slider {
+      display: none;
+    }
+
+    &__image {
+      display: flex; 
+      justify-content: center;
+      margin-top: 71px;
+      & img {
+        width: 100%;
       }
     }
   }

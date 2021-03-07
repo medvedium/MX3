@@ -20,7 +20,7 @@
 
 @media (min-width: 768px) {
 .programs {
-  width: 765px;
+  width: 749px;
   margin: 0 auto 70px;
   &__icons {
     width: 520px;
@@ -32,4 +32,10 @@
     font-size: 20px;
   }
 }
+}
+
+@media (min-width: 1024px) {
+  .programs {
+    margin-bottom: 100px;
+  }
 }

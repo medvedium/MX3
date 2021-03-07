@@ -1,15 +1,15 @@
 .flow {
   background-color: #ededed;
   padding-top: 70px;
+  padding-bottom: 218px;
 
   background-image: url(../img/flow-bg.png);
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom;
 
   &__list {
     padding-top: 36px;
-    padding-bottom: 220px;
     padding-left: 67px;
     margin-bottom: 0;
 
@@ -30,8 +30,15 @@
   }
 }
 
+@media (min-width: 470px) {
+  .flow {
+    padding-bottom: 350px;
+  }
+}
+
 @media (min-width: 768px) {
   .flow {
+    padding-bottom: 496px;
     & .title {
       padding-left: 77px;
       padding-right: 77px;
@@ -47,7 +54,6 @@
       padding-right: 68px;
       padding-left: 66px;
       justify-content: space-between;
-      padding-bottom: 496px;
 
       &--item {
         width: auto;
@@ -76,8 +82,16 @@
 
 @media (min-width: 1024px) {
   .flow {
-    &__list {
-      padding-bottom: 870px;
+    padding-bottom: 653px;
+    &-center {
+      padding-right: calc(50% - 479px);
+      padding-left: calc(50% - 479px);
     }
+  }
+}
+
+@media (min-width: 1200px) {
+  .flow {
+    padding-bottom: 870px;
   }
 }
