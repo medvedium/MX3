@@ -134,6 +134,15 @@
   .nav {
     &__list {
       display: flex;
+      // &--item {
+      //   &:not(:last-child) {
+      //     padding-right: 20px;
+      //   }
+  
+      //   &:not(:first-child) {
+      //     padding-left: 20px; 
+      //   }
+      // }
     }
   }
 

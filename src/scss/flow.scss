@@ -73,3 +73,11 @@
     }
   }
 }
+
+@media (min-width: 1024px) {
+  .flow {
+    &__list {
+      padding-bottom: 870px;
+    }
+  }
+}

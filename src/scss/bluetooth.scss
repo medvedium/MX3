@@ -59,6 +59,7 @@
       align-items: flex-start;
 
       background: url(../img/bluetooth-bg-desk.png) no-repeat bottom right, url(../img/bluetooth-bg-2-desk.png) no-repeat bottom left;
+      background-size: 48%;
     }
 
     & .subtitle {
@@ -72,7 +73,7 @@
     &__giant {
       font-size: 300px;
       line-height: 253px;
-      margin-left: 100px;
+      margin-left: 250px;
     }
 
     &-center {
