@@ -1,15 +1,3 @@
-# starterPack
+# Ссылка на githubPages
 
-Шаблон для начала нового проекта
-
-
-## 
-
-- Type `npm i`
-
-
-## Для обновления паектов
-
-- `sudo npm i -g npm-check-updates`
-- `ncu -u`
-- `npm i`
+https://medvedium.github.io/MX3/
