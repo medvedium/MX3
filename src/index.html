@@ -15,6 +15,8 @@
 <body>
 
   <section class="hero">
+
+    <div class="burger"><span></span></div>
     <header class="header center">
       <a href="index.html">
         <img src="img/logo_light.svg" alt="logo" class="logo logo_light">
@@ -25,12 +27,40 @@
 
       <nav class="header__nav">
         <ul class="nav__list">
-          <li class="nav__list--item"><a href="#" class="nav__list--link">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a></li>
-          <li class="nav__list--item"><a href="#" class="nav__list--link">ГДЕ УГОДНО</a></li>
-          <li class="nav__list--item"><a href="#" class="nav__list--link">С КОМФОРТОМ</a></li>
-          <li class="nav__list--item"><a href="#" class="nav__list--link">С РАЗНЫХ УСТРОЙСТВ</a></li>
-          <li class="nav__list--item"><a href="#" class="nav__list--link">В ЛЮБОЕ ВРЕМЯ</a></li>
-          <li class="nav__list--item"><a href="#" class="nav__list--link">И ЕЩЕ БЫСТРЕЕ</a></li>
+          <li class="nav__list--item"><a href="#bluetooth" class="nav__list--link">РАБОТАЙТЕ БЕЗ ПРОВОДОВ</a></li>
+          <li class="nav__list--item"><a href="#surface" class="nav__list--link">ГДЕ УГОДНО</a></li>
+          <li class="nav__list--item"><a href="#settings" class="nav__list--link">С КОМФОРТОМ</a></li>
+          <li class="nav__list--item"><a href="#flow" class="nav__list--link">С РАЗНЫХ УСТРОЙСТВ</a></li>
+          <li class="nav__list--item"><a href="#mouse-1" class="nav__list--link">В ЛЮБОЕ ВРЕМЯ</a></li>
+          <li class="nav__list--item"><a href="#mouse-2" class="nav__list--link">И ЕЩЕ БЫСТРЕЕ</a></li>
+        </ul>
+      </nav>
+
+      <nav class="header__nav--mobile">
+        <a href="index.html">
+          <img src="img/logo_light.svg" alt="logo" class="logo logo_light-mobile">
+        </a>
+
+        <ul class="nav__list--mobile">
+          <li class="nav__list--item--mobile">
+            <a href="#bluetooth" class="nav__list--link">БЕЗ ПРОВОДОВ</a>
+          </li>
+          <li class="nav__list--item--mobile">
+            <a href="#surface" class="nav__list--link">ЗА ЛЮБЫМ СТОЛОМ</a>
+          </li>
+          <li class="nav__list--item--mobile">
+            <a href="#flow" class="nav__list--link">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</a>
+          </li>
+          <li class="nav__list--item--mobile">
+            <a href="#settings" class="nav__list--link">С ИНДИВИДУАЛЬНЫМИ <br> НАСТРОЙКАМИ</a>
+          </li>
+          <li class="nav__list--item--mobile">
+            <a href="#mouse-2" class="nav__list--link">БЫСТРЕЕ, <br> ЧЕМ КОГДА-ЛИБО</a>
+          </li>
+          <li class="nav__list--item--mobile">
+            <a href="#mouse-1" class="nav__list--link">КОМФОРТНО. ЭРГОНОМИЧНО.
+              ИНТУИТИВНО.</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -71,7 +101,7 @@
     </div>
   </section>
 
-  <section class="surface center">
+  <section class="surface center" id="surface">
     <h2 class="title">ЗА ЛЮБЫМ СТОЛОМ</h2>
     <p class="text text-center">Исследуйте ландшафты своего дома, не отвлекаясь от работы.
       MX Master 3 достаточно компактная, чтобы сменить рабочее место и перенестись с ноутбуком на кухню.</p>
@@ -130,7 +160,7 @@
       MX Master 3 работает на любой поверхности, даже на стекле.</p>
   </section>
 
-  <section class="flow center">
+  <section class="flow center" id="flow">
     <h2 class="title">ОДНОВРЕМЕННО С НЕСКОЛЬКИХ УСТРОЙСТВ</h2>
     <p class="text text-center">С технологией Flow вы сможете работать одновременно на нескольких компьютерах, мгновенно
       переключаясь между разными операционными системами — даже между Windows® и macOS.
@@ -148,7 +178,7 @@
     </ol>
   </section>
 
-  <section class="settings center">
+  <section class="settings center" id="settings">
     <h2 class="title">С ИНДИВИДУАЛЬНЫМИ НАСТРОЙКАМИ</h2>
     <p class="text text-center">Мышь MX Master 3 адаптируется под ваши рабочие процессы. Благодаря
       индивидуальным настройкам, вы сможете настроить кнопки и жесты практически
@@ -201,14 +231,14 @@
   </section>
 
   <section class="mouse center">
-    <div class="mouse__text mouse__text_1">
+    <div class="mouse__text mouse__text_1" id="mouse-1">
       <h2 class="title">КОМФОРТНО. ЭРГОНОМИЧНО. ИНТУИТИВНО.</h2>
       <p class="text text-center">Дизайн мыши MX Master 3 разработан так, чтобы с точностью повторять форму вашей
         ладони. Но не менее важны колесико прокрутки для большого пальца
         и расположение кнопок жестов, с которыми вы будете творить уверенно как никогда.</p>
     </div>
     <div class="mouse__img mouse__img_1"></div>
-    <div class="mouse__text mouse__text_2">
+    <div class="mouse__text mouse__text_2" id="mouse-2">
       <h2 class="title">БЫСТРЕЕ, ЧЕМ КОГДА-ЛИБО</h2>
       <p class="text text-center">Компьютерная мышь MX Master 3 предлагает ультимативный механизм прокрутки
         со скоростью 1000 строк за 1 секунду.

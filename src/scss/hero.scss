@@ -5,6 +5,121 @@
 
   &__nav {
     display: none;
+
+    &--mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: -100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: #2F3132;
+      padding: 70px 10px 20px 10px;
+      transition: all 0.2s linear;
+      z-index: 2;
+      &.active {
+        top: 0;
+      }
+
+      & .nav {
+        &__list {
+          &--link {
+            font-weight: 900;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: #C4C4C4;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            &:hover {
+              font-weight: 900;
+              font-size: 20px;
+              line-height: 23px;
+              text-align: center;
+              color: #FFFFFF;
+              text-decoration: underline;
+              padding: 0;
+              border-bottom: none;
+            }
+          }
+          &--item--mobile  {
+            margin-bottom: 32px;
+          }
+        }
+        &__list--mobile {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          list-style-type: none;
+      
+
+        }
+      }
+    }
+  }
+}
+
+.hero-active {
+  padding: 0;
+}
+
+
+
+.burger {
+  display: block;
+  position: absolute;
+  right: 28px;
+  top: 25px;
+  width: 30px;
+  height: 20px;
+  z-index: 3;
+  cursor: pointer;
+  & span {
+    background-color: #2F3132;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    top: 8px;
+  }
+  &:before,
+  &:after {
+    transition: all 0.2s linear;
+    content: '';
+    background-color: #2F3132;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    left: 0;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
+  &.active {
+    &:before {
+      transform: rotate(45deg);
+      top: 8px;
+      background-color: #fff;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      bottom: 8px;
+      background-color: #fff;
+    }
+    & span {
+      transform: scale(0);
+      background-color: #fff;
+    }
   }
 }
 
@@ -42,18 +157,24 @@
       }
     }
   }
-
 }
 
 .logo {
   width: 130px;
   &_light {
     display: none;
+    &-mobile {
+      position: absolute;
+      top: 25px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
 
 .hero {
   background-color: #e0e1e2;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,6 +205,48 @@
     margin-bottom: 160px;
     &__nav {
       display: flex;
+
+      &--mobile {
+        padding-top: 400px;
+        .nav {
+          &__list {
+            &--link {
+              font-size: 40px;
+              line-height: 47px;
+            }
+
+            &--item--mobile {
+              margin-bottom: 59px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+
+  .burger {
+    right: 58px;
+    top: 54px;
+    height: 40px;
+    width: 60px;
+
+    & span {
+      height: 8px;
+      top: 16px;
+    }
+
+    &:before,
+    &:after {
+      height: 8px;
+    }
+    &.active {
+      &:before {
+        top: 16px;
+      }
+      &:after {
+        bottom: 16px;
+      }
     }
   }
 
@@ -106,6 +269,9 @@
 
   .logo {
     width: 240px;
+    &_light-mobile {
+      top: 64px;
+    }
   }
 }
 
@@ -116,10 +282,15 @@
 
   .logo_light {
     display: block;
+
   }
 
   .logo {
     width: 150px;
+  }
+
+  .burger {
+    display: none;
   }
 
   .header {
@@ -130,19 +301,17 @@
 
     align-items: center;
     justify-content: space-between;
+
+    &__nav {
+      
+      &--mobile {
+        display: none;
+      }
+    }
   }
   .nav {
     &__list {
       display: flex;
-      // &--item {
-      //   &:not(:last-child) {
-      //     padding-right: 20px;
-      //   }
-  
-      //   &:not(:first-child) {
-      //     padding-left: 20px; 
-      //   }
-      // }
     }
   }
 
